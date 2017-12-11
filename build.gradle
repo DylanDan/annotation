@@ -1,0 +1,13 @@
+description = 'annotation processor'
+
+apply plugin:'java'
+
+task createJavaProject << {
+    sourceSets*.java.srcDirs*.each { it.mkdirs() }
+    sourceSets*.resources.srcDirs*.each { it.mkdirs()}
+}
+dependencies {
+    
+}
+
+
