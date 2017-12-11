@@ -2,12 +2,20 @@ description = 'annotation processor'
 
 apply plugin:'java'
 
+repositories {
+	maven{
+		url "http://maven.aliyun.com/nexus/content/groups/public/"
+	}
+  }
+
 task createJavaProject << {
     sourceSets*.java.srcDirs*.each { it.mkdirs() }
     sourceSets*.resources.srcDirs*.each { it.mkdirs()}
 }
+
 dependencies {
-    
+    compile "org.apache.velocity:velocity:1.6.4"
+    compile "org.apache.velocity:velocity-tools:2.0"
 }
 
 
