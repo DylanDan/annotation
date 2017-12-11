@@ -13,7 +13,11 @@ import javax.tools.Diagnostic.Kind;
 
 import com.xxxx.fastsz.annnotation.Complexity;
 
-
+/**
+ * https://deors.wordpress.com/2011/10/31/annotation-generators/
+ * @author Dylan.Dan
+ *
+ */
 @SupportedAnnotationTypes("com.xxxx.fastsz.annnotation.Complexity")
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class ComplexityProcessor extends AbstractProcessor {
