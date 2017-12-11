@@ -15,6 +15,7 @@ import com.xxxx.fastsz.annnotation.Complexity;
 
 /**
  * https://deors.wordpress.com/2011/10/31/annotation-generators/
+ * https://github.com/deors/deors.demos.annotations
  * @author Dylan.Dan
  *
  */
